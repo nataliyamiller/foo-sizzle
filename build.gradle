@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+archivesBaseName = "foo-sizzle"
+version = '1.0'
+mainClassName = "FooSizzle"
+
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  testCompile group: 'junit', name: 'junit', version: '4.+'
+}
